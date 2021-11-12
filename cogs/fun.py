@@ -71,6 +71,13 @@ class Fun(commands.Cog, name="Fun Commands"):
 
     #    await ctx.send(embed=response)
 
+    @commands.command(description="HOOONK!")
+    async def toaster(self, ctx):
+        response = officialEmbed("NOOBLET, WOOT ***WOOOOOOOT***", color=0xff4500)
+        response.set_image(
+            url="https://i.imgur.com/fFFKDay.png")
+        await ctx.send(embed=response)
+
     @commands.command(description="NOOT NOOT!")
     async def noot(self,ctx):
         response = officialEmbed("NOOT NOOT", color=0xffffff)
